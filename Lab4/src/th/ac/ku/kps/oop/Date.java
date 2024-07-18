@@ -1,14 +1,18 @@
 package th.ac.ku.kps.oop;
 
 public class Date {
-	private int date;
-	private int month;
-	private int year;
+	private int date = 20;
+	private int month = 7;
+	private int year = 2567;
 	
 	public Date(int d, int m, int y) {
-		date = d;
-		month = m;
-		year = y;
+		if(d>0 && d<32 && m>0 && m<13) {
+			date = d;
+			month = m;
+			if(y<=2024) {
+				year = y + 543;
+			}
+		}
 	}
 	
 	public void setAll(int d, int m, int y) {

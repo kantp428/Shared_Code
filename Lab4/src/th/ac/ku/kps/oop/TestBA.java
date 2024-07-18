@@ -4,7 +4,7 @@ public class TestBA {
 	public static void main(String[] args) {
 		BankAccount bank1 = new BankAccount("Win");
 //		Date date1 = new Date(1,11,2015);
-		BankAccount bank2 = new BankAccount("Tor",500,new Date(1,11,2015));
+		BankAccount bank2 = new BankAccount("Tor",500,new Date(1,12,2015));
 		
 		System.out.println(bank1.getInfo());
 		bank1.property();
